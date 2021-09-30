@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "meta.proto"; 
+
+package sf.faetea; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Adsfsdaf";
+option java_outer_classname = "AdsfsdafProto";
+
+message Adsfsdaf {
+}
