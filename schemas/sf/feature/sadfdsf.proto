@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "meta_file.proto"; 
+import "meta_msg.proto"; 
+import "meta.proto"; 
+
+package sf.feature; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Sadfdsf";
+option java_outer_classname = "SadfdsfProto";
+option (meta.file.gus_team_id) = "sadfsdaf";
+option (meta.file.support_email) = "sadfsadf";
+
+message Sadfdsf {
+    option (meta.msg.desc) = "sdafdsf";
+    repeated bool 32432 = 1 [(meta.desc) = "324234"];
+}
