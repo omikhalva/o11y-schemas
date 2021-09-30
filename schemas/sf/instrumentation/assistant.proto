@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "meta_file.proto"; 
+import "meta_msg.proto"; 
+import "meta.proto"; 
+
+package sf.instrumentation; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Assistant";
+option java_outer_classname = "AssistantProto";
+option (meta.file.gus_team_id) = "a00B0000003RSStIAO";
+option (meta.file.support_email) = "instrumentationteam@salesforce.com";
+
+message Assistant {
+    option (meta.msg.desc) = "This is an example description";
+    bool my_first_field = 1 [(meta.desc) = "Demonstrates a boolean string"];
+    string my_second_field = 2 [(meta.desc) = "Demonstrates a string field", (meta.tokenize) = "userID", (meta.max_length) = 256];
+    double my_third_field = 3 [(meta.desc) = "Demonstrating a number", (meta.units) = "msecs"];
+}
