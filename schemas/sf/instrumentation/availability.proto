@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "meta_file.proto"; 
+import "meta.proto"; 
+
+package sf.instrumentation; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Availability";
+option java_outer_classname = "AvailabilityProto";
+option (meta.file.gus_team_id) = "a00B0000003RSStIAO";
+option (meta.file.support_email) = "instrumentationteam@salesforce.com";
+
+message Availability {
+    bool my_first_field = 1 [(meta.desc) = "First"];
+    string second_field = 2 [(meta.desc) = "desc", (meta.tokenize) = "userID", (meta.max_length) = 100];
+    repeated double third_field = 3 [(meta.desc) = "sadfsdaf"];
+}
