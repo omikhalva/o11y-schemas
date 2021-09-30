@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "meta_file.proto"; 
+import "meta_msg.proto"; 
+import "meta.proto"; 
+
+package sf.dsafsdaf; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Fsdaf";
+option java_outer_classname = "FsdafProto";
+option (meta.file.gus_team_id) = "sadfdf";
+option (meta.file.support_email) = "sadfsad@sdfds";
+
+message Fsdaf {
+    option (meta.msg.desc) = "sadf";
+    bool Sdafsad = 1 [(meta.desc) = "asdf"];
+}
