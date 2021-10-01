@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "meta_file.proto"; 
+import "meta_msg.proto"; 
+import "meta.proto"; 
+
+package sf.instrumentation; 
+
+option java_package = "com.salesforce.instrumentation.uitelemetry.schema.sf.Abcdef";
+option java_outer_classname = "AbcdefProto";
+option (meta.file.gus_team_id) = "a00B0000003RSStIAO";
+option (meta.file.support_email) = "instrumentationteam@salesforce.com";
+
+message Abcdef {
+    option (meta.msg.desc) = "sdafsadf";
+    bool field_one_as_an_example = 1 [(meta.desc) = "Required description"];
+    uint32 number_field = 2 [(meta.desc) = "desc1"];
+    repeated string string_field = 3 [(meta.desc) = "desc3", (meta.max_length) = 123, (meta.min_length) = 12, (meta.max_count) = 100];
+}
