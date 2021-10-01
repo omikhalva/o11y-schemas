@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "meta.proto"; 
+
+package sf.undefined; 
+
+message undefined {
+}
